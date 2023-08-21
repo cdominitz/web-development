@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*   ----- Variables  -----  */
+:root {
+    --sky-blue: rgba(137, 179, 217, .9);
+    --peach: rgba(242, 162, 92, 0.8);
+    --rust: rgba(166, 63, 3, 1);
+    --apricot: rgba(255, 223, 205, 0.8);
+    --warm-walnut: rgba(115, 32, 2, 1);
+    --dark-walnut: rgba(89, 9, 2, 1);
+    --blue-gray: rgba(173, 192, 200, 0.9);
+    --header: rgba(230, 241, 255, 1);
+    --contact:rgba(104, 144, 154, 1);
+    --olive-green:rgba(135, 156, 139, 0.9);
+    --pale-green:rgba(135, 156, 139, 0.3);
+    --table: rgba(230, 241, 255, 0.5);
+  }
+
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {} or :root {} */
+    background-color:var(--sky-blue);
+    background-image:url("images/grand-prismatic-spring.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:var(--dark-walnut);
+    font-family: 'Poppins', sans-serif;
+    margin:0 auto;
+    padding: 3%;
+    max-width: 900px;
+    min-width: 500px;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header, main, footer{
+    padding: 3%;
+  }
+  header {
+    color:var(--header);
+    margin: 1%;
+  }
+  main {
+    background-color:var(--blue-gray);
+    padding: 0.1%;
+    border: 2px solid var(--rust);
+    margin: 0 auto;
+  }
+  section {
+    border: 2px solid var(--peach);
+    padding: 1%;
+  }
+    article {
+      border-top: 2px solid var(--rust);
+      padding: 1.5%;
+    }
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  footer {
+    text-align: right;
+    color: var(--header);
+  }
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align: center;
+    display: flex;
+    flex-wrap: row;
+    max-width: 95%;
+  }
+  nav a {
+    background-color: var(--warm-walnut);
+    border: 2px solid var(--dark-walnut);
+    border-radius: 5px 5px 0 0;
+    color: var(--peach);
+    font-size: 1em;
+    font-weight: bold;
+
+    padding: 0.5% 1% 0.5% 1%;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: var(--peach);
+    color: var(--warm-walnut);
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  nav.local a{
+    background-color: var(--table);
+    border: 0;
+    color: var(--warm-walnut);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+  }
+
+  nav.local a:hover {
+    background-color: var(--pale-green);
+    color: var(--warm-walnut);
+  }
+
+  /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 90%;
+    min-width: 80%;
+    table-layout: auto;
+  }
+  caption {
+    margin: 2%;
+    font-size: 90%;
+  }
+  thead {
+    border-bottom: 2px solid var(--warm-walnut);
+    text-align: center;
+  }
+  tbody {
+    text-align: center;
+  }
+  th {
+    margin: 1%;
+  }
+  td {
+    padding: 0.5%;
+    border-bottom: 1px solid var(--warm-walnut);
+  }
+  tbody tr:nth-child(odd){
+    background-color: var(--table);
+  }
+  #createExpense th{
+    font-size: 95%;
+    padding: 0.1%;
+    margin: 0;
+  }
+
+  #createExpense td:nth-child(7){
+    min-width: 75px;
+  }
+  #createExpense td:nth-child(3) input{
+    max-width: 100%;
+    font-size: 70%;
+  }
+
+
+  #createExpense td input{
+    max-width: 60px;
+    font-size: 80%;
+    padding: 0;
+    text-align: center;
+  }
+
+  #createExpense td label{
+    display: inline;
+    margin-top: 3%;
+    font-size:95%;
+    color: var(--dark-walnut);
+  }
+
+  #createExpense button{
+    font-size: 75%;
+    margin: 0;
+  }
+
+  #expenses td:nth-child(1) {font-size: 20px;}
+  #expenses td:nth-child(2) {font-size: 20px;}
+  #expenses th:nth-child(7) {font-size: 20px;}
+  #expenses td:nth-child(7) {min-width: 30px;}
+  #expenses td:nth-child(6) {text-align: right;}  
+  
+  /*  ----- Form ----- */
+  form, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  input, select, textarea{
+    background-color: var(--header);
+    padding: 1%;
+    font-size: 110%;
+  }
+  fieldset {
+    border: 2px solid var(--rust);
+    background-color: var(--olive-green);
+    margin-bottom: 4%;
+    color: var(--dark-walnut);
+  }
+    legend {
+      font-weight: bold;
+      font-size: large;
+      border: 2px solid var(--rust);
+      padding: 1%;
+      background-color: var(--olive-green);
+      color: var(--warm-walnut);
+    }
+  label {
+      display: block;
+      margin-top: 3%;
+      font-size:95%;
+      color: var(--dark-walnut);
+  }
+    button {
+      padding: 1%;
+      background-color: var(--contact);
+      color: var(--header);
+      font-size: 110%;
+      margin-top: 2%;
+    }
+
+    button:hover{
+      background-color: var(--apricot);
+      color: var(--dark-walnut)
+    }
+
+    output {}
+    meter {}
+    progress {}
+      optgroup {}
+      option {}
+
+    input:focus{
+      background-color: var(--apricot);
+    }
+
+    *::placeholder{
+      font-size: 80%;
+    }
+
+    *:required{
+      border: 2px solid darkgreen;
+    }
+
+    label.required:after{
+      content: "*";
+      color: red;
+    }
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  /*.gallery {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .gallery figure{
+    width: 320px;
+    margin: .75%;
+    padding: 1%;
+    color: var(--sky-blue);
+  }
+
+  .gallery img{
+    width: 100%;
+    border: 2px solid var(--warm-walnut);
+    color: var(--dark-walnut);
+  }
+
+  .gallery figcaption{
+    display: block;
+    padding: 3px;
+    color: var(--rust);
+  }*/
+  
+  
+  @keyframes App-logo {}
+
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
