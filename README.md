@@ -3,7 +3,8 @@
 The goal of this project was to learn about the frontend and backend of web developement through creating a full-stack MERN app that has CRUD functionality.
 
 ## Frontend
-The frontend file contains a ReadME that explains how to run the application. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend file contains a ReadME that explains how to run the application. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The website has multiple pages that each use a different web development skill.
 * Home Page - Information about the creation of this web application
 * Topics - Discusses topics related to Web Development, such as Web Servers, Frontend Design, and Usability
