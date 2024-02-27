@@ -52,4 +52,4 @@ The backend uses REST API. It contains model and controller files. These contain
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any inquiries or feedback, please contact [Your Name](mailto:cdominitz@gmail.com).
+For any inquiries or feedback, please contact [Calista Dominitz](mailto:cdominitz@gmail.com).
