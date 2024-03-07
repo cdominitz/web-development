@@ -15,6 +15,9 @@
   },
   "author": "Calista Dominitz",
   "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
