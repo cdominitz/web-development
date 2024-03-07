@@ -1,7 +1,7 @@
 # Personal Webpage for Web Development Class
 
 ## Description
-The goal of this project was to learn about the frontend and backend of web development through creating a full-stack MERN app that has CRUD functionality.
+The goal of this project was to learn about the frontend and backend of web development through creating a full-stack MERN app that has CRUD functionality. To view a static version of this website: [Static Web Development Website](https://cdominitz.github.io/CS290-static/).
 
 ### Frontend
 The frontend file contains a ReadME that explains how to run the application. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -37,7 +37,7 @@ The backend uses REST API. It contains model and controller files. These contain
    ```
 5. Open another terminal window/tab and navigate to the backend folder:
    ```bash
-   cd ../backend
+   cd backend
    ```
 6. Install dependencies:
    ```bash
